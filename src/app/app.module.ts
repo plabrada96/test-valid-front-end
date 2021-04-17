@@ -8,20 +8,20 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { PersonsComponent } from './components/persons/persons.component';
 import { FormsModule } from '@angular/forms';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { ReactiveFormsModule } from "@angular/forms"; 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    PersonsComponent,
-    NavbarComponent
+    PersonsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [PersonService],
   bootstrap: [AppComponent]

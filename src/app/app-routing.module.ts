@@ -5,9 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  {path: 'home', component: FormComponent},
+  {path: 'form', component: FormComponent},
   {path: 'persons', component: PersonsComponent},
-  {path: '**', pathMatch:'full', redirectTo:'home'}
+  {path: '**', pathMatch:'full', redirectTo:'persons'}
 ];
 
 @NgModule({
