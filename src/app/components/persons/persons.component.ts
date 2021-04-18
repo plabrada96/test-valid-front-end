@@ -32,8 +32,6 @@ export class PersonsComponent implements OnInit {
   }
 
   updatePersonsSelected() {
-    console.log(this.idsPersons);
-
     this._personService.updateProcessed(this.idsPersons).subscribe((res) => {
       console.log('res', res);
     });
