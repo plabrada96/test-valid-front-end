@@ -20,12 +20,10 @@ export class FormComponent implements OnInit {
 
   save(form:NgForm){
     if(form.invalid){
-      console.log('Format no válid');
       return;
     }
 
     this._fromService.savePerson(this.person).subscribe(res=>{
-      console.log(res);
       this.personSaved=true;
     })
   }
